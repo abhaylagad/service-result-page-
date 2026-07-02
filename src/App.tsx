@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { 
   TrendingUp, 
@@ -165,6 +165,21 @@ function CaseStudyCard({ study, cardVariants }: CaseStudyCardProps) {
 }
 
 export default function App() {
+  useEffect(() => {
+    // If window.instgrm is already loaded, process the embed immediately
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    } else {
+      const interval = setInterval(() => {
+        if (window.instgrm) {
+          window.instgrm.Embeds.process();
+          clearInterval(interval);
+        }
+      }, 500);
+      return () => clearInterval(interval);
+    }
+  }, []);
+
   // Stagger animation container
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -301,6 +316,53 @@ export default function App() {
           ))}
         </motion.div>
       </main>
+
+      {/* TESTIMONIAL VIDEO SECTION */}
+      <section id="hear-it-from-clients" className="bg-white border-t border-slate-100 py-16 sm:py-20 px-4">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-display font-bold text-slate-900 tracking-tight">
+            Hear It From Our Clients
+          </h2>
+          <p className="text-slate-500 mt-2 text-xs sm:text-sm md:text-base mb-10">
+            Real founders, in their own words.
+          </p>
+          
+          {/* Centered responsive container for the two portrait players */}
+          <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-12">
+            {/* Video 1: Instagram Reel (Vertical) */}
+            <div className="w-full max-w-[340px] flex flex-col items-center">
+              <blockquote 
+                className="instagram-media" 
+                data-instgrm-captioned 
+                data-instgrm-permalink="https://www.instagram.com/reel/DNqcOdCJ-np/?utm_source=ig_embed&utm_campaign=loading" 
+                data-instgrm-version="14" 
+                style={{
+                  background: "#FFF", 
+                  border: 0, 
+                  borderRadius: "12px", 
+                  boxShadow: "0 4px 24px rgba(15, 23, 42, 0.04), 0 1px 10px rgba(0,0,0,0.05)", 
+                  margin: "1px", 
+                  maxWidth: "540px", 
+                  minWidth: "326px", 
+                  padding: 0, 
+                  width: "100%"
+                }}
+              >
+              </blockquote>
+            </div>
+
+            {/* Video 2: Wistia Portrait (vertical format) */}
+            <div className="w-full max-w-[340px] flex flex-col items-center">
+              <div 
+                className="w-full rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-slate-50"
+                style={{ aspectRatio: "0.45977011494252873" }}
+              >
+                <wistia-player media-id="lapjnplxvu" aspect="0.45977011494252873"></wistia-player>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* FOOTER */}
       <footer id="app-footer" className="bg-[#080B12] text-slate-400 border-t border-slate-900 py-16 px-4">

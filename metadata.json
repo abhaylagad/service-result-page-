@@ -1,0 +1,6 @@
+{
+  "name": "Client Results",
+  "description": "A professional proof and case-study page showcasing real business results and success stories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

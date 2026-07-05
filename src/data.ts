@@ -13,7 +13,7 @@ export const caseStudies: CaseStudy[] = [
     id: 7,
     name: "Arnav Chaturvedi — Conexsent",
     category: "Consulting and Client Services",
-    image: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/helsi.jpeg",
+    image: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/aranb%20photo.png",
     before: "Rs.2L/month",
     after: "Rs.10L/month (5x growth)",
     story: "Conexsent was already delivering real results, but the front end was the problem, living on referrals and old contacts. We built the full acquisition engine — clear positioning, a proof and outcomes funnel, and Meta ads that put qualified decision-makers on his calendar every week. In 3 months Conexsent went from Rs.2 lakh to Rs.10 lakh a month, a 5x jump on a pipeline that fills itself."
@@ -22,7 +22,7 @@ export const caseStudies: CaseStudy[] = [
     id: 8,
     name: "Harsh Patel — Innovate Tech IT",
     category: "IT Services and Placement",
-    image: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/happy.jpeg",
+    image: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/Harsh%20Patel.png",
     before: "Rs.5.6L/month",
     after: "Rs.18L/month (3x+ growth)",
     story: "Innovate Tech IT was doing solid numbers at Rs.5.6 lakh a month but growth had gone flat. Leads were inconsistent and the team spent more time chasing prospects than closing them. We built a complete acquisition system — attention-grabbing offer positioning, a funnel that did the convincing before the call, audience-specific ad creatives, and a follow-up system that kept leads warm. In 4 months the business scaled from Rs.5.6 lakh to Rs.18 lakh a month, more than 3x."
@@ -31,7 +31,7 @@ export const caseStudies: CaseStudy[] = [
     id: 9,
     name: "Kartik Trivedi — Sociazy Estate Desk",
     category: "Real Estate",
-    image: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/prit.jpeg",
+    image: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/Kartik%20Trivedi%20.png",
     before: "Rs.3L/month",
     after: "Rs.9L/month (3x growth)",
     story: "Sociazy Estate Desk was doing Rs.3 lakh a month, all word of mouth and old contacts, with no steady flow of new buyers. We built the entire acquisition system — buyer-focused positioning, a funnel that booked them, geo-targeted Meta ads, and automated follow-up so no enquiry went cold. In 3 months Sociazy scaled from Rs.3 lakh to Rs.9 lakh a month, a 3x increase that keeps the calendar full."
@@ -40,7 +40,7 @@ export const caseStudies: CaseStudy[] = [
     id: 1,
     name: "Hiren Thakkar — Brand Buzzar",
     category: "SEO and Digital Marketing Agency",
-    image: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/hiren.jfif",
+    image: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/hiren%20thakar.png",
     before: "Rs.2.5L/month",
     after: "Rs.10L/month (4x growth)",
     story: "Brand Buzzar was already doing solid client work but had no consistent inbound pipeline. New business came only through referrals, unpredictable month to month. We built a client acquisition system with sharp offer positioning, an authority and results funnel, and Meta ads that brought qualified decision-makers to their calendar. The result was 4x growth in the agency's own revenue, with a lead system that runs without Hiren personally making calls."
@@ -49,7 +49,7 @@ export const caseStudies: CaseStudy[] = [
     id: 2,
     name: "HealthyNation",
     category: "Fitness Agency",
-    image: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/indranil%20chakraborty.jpeg",
+    image: "https://raw.githubusercontent.com/scale100million-prog/my-images/main/healthyNation.png",
     before: "Rs.2–3L/month",
     after: "Rs.16L/month (5x growth)",
     story: "HealthyNation was doing Rs.2–3 lakh a month on word of mouth and referrals, with no system and no predictable pipeline. We built their complete client acquisition engine — VSL funnel, Meta ads, creative testing, and automated follow-up. Today they consistently generate Rs.16 lakh a month, a 5x increase, without the founder doing outreach."
